@@ -1,11 +1,12 @@
 let environment = 'dev';
-let baseUrl = environment === 'dev' ? 'http://localhost:8088' : 'http://47.105.41.229:80/api/mall-api';
-let shopIndexUrl = environment === 'dev' ? 'http://localhost:8080/' : 'http://47.105.41.229:80/'
-
+let baseUrl = environment === 'dev' ? 'http://localhost:8088' : 'http://8.131.57.243:8080';
+let shopIndexUrl = environment === 'dev' ? 'http://localhost:8080/' : 'http://8.131.57.243:80/'
+let searchServerUrl = environment === 'dev' ? 'http://localhost:8070/' : 'http://8.131.57.243:8070/'
 window.app = {
     paymentServerUrl: "http://payment.t.mukewang.com/foodie-payment", // 支付網站
     serverUrl: baseUrl,                                                     // 接口服务接口地址
     shopServerUrl: shopIndexUrl,                      			    // 门户网站地址
+    searchServerUrl: searchServerUrl,                      			    // es 服务网址
     centerServerUrl: "center.html",                                         // 用户中心地址
     cookieDomain: "",                                                       // cookie 域
 
